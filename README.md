@@ -1,4 +1,7 @@
 # Elastic-Search-Simple-spring-Boot-Application
+Technologies Used:   Java, ElasticSearch
+Framework :          Spring Boot with ElasticsearchRepository
+
 Its a simple elastic search Spring Boot Application.
 This application does not have authentication configuration of elastic search.
 This will create the index named product in elastic search db.
@@ -19,8 +22,9 @@ ________________________________________________________________________________
   2. Start elastic search server.
   3. Go to application.properties file and modify below:
            spring.data.elasticsearch.cluster-name=naveen-test-cluster(replace this with your cluster)
+           spring.data.elasticsearch.cluster-nodes=http://localhost:9200/
      
-  4. Run spring boot application.
+  5. Run spring boot application.
 
 ______________________________________________________________________________________________________________
 
