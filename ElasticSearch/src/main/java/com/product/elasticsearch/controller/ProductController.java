@@ -48,7 +48,7 @@ public class ProductController {
 			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
 	}
 	
-	@PostMapping("/delete/{name}")
+	@DeleteMapping("/delete/{name}")
 	public ResponseEntity<Product> delete(@PathVariable String name){
 		Boolean p=productService.delete(name);
 		if(p==true)
